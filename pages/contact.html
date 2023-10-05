@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link href="/assets/css/boxicons/css/boxicons.min.css" rel="stylesheet" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo"> Manasseh.zw </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link">
+                <i class="bx bx-home"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/pages/skills.html" class="nav__link">
+                <i class="bx bx-trophy"></i> Skills</a
+              >
+            </li>
+
+            <li class="nav__item">
+              <a href="/pages/qualifications.html" class="nav__link"
+                ><i class="bx bx-book"></i> Qualifications</a
+              >
+            </li>
+
+            <li class="nav__item">
+              <a href="/pages/services.html" class="nav__link"
+                ><i class="bx bx-briefcase"></i> Services</a
+              >
+            </li>
+
+            <li class="nav__item">
+              <a href="/pages/projects.html" class="nav__link"
+                ><i class="bx bx-image"></i> Projects</a
+              >
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link"
+                ><i class="bx bx-phone"></i> Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x-circle"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+
+      <div class="contact__container container grid section__border">
+        <div class="contact__content">
+          <h3 class="contact__title">
+            <i class="bx bx-message-rounded"></i>Lets Talk
+          </h3>
+
+          <div class="contact__info">
+            <div class="contact__data">
+              <span class="contact__data-title"
+                ><i class="bx bxl-gmail"></i
+              ></span>
+              <span class="contact__data-info">manasseh.dev@gmail.com</span>
+              <a href="" class="contact__button"
+                >write me <i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+            <div class="contact__data">
+              <span class="contact__data-title"
+                ><i class="bx bxl-whatsapp"></i
+              ></span>
+              <span class="contact__data-info">+263 777 724 726</span>
+              <a href="" class="contact__button">
+                lets chat <i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+            <div class="contact__data">
+              <span class="contact__data-title"
+                ><i class="bx bxl-messenger"></i
+              ></span>
+              <span class="contact__data-info">manasseh.zw</span>
+              <a href="" class="contact__button"
+                >DM me <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <h3 class="contact__title">
+            <i class="bx bx-send"></i> Write me your project
+          </h3>
+
+          <form
+            action=""
+            class="contact__form"
+            id="contact-form"
+            onsubmit="return sendEmail(this);"
+          >
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Name</label>
+              <input
+                type="text"
+                name="user_name"
+                required
+                placeholder="Write your name"
+                class="contact__form-input"
+                id="contact-name"
+              />
+            </div>
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Email</label>
+              <input
+                type="email"
+                name="user_email"
+                required
+                placeholder="Write your email"
+                class="contact__form-input"
+                id="contact-name"
+              />
+            </div>
+            <div class="contact__form-div contact__form-area">
+              <label for="" class="contact__form-tag">Project</label>
+              <textarea
+                name="user_project"
+                id="contact-project"
+                required
+                placeholder="Whats your project?"
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+              ></textarea>
+            </div>
+
+            <p class="contact__message" id="contact-message"></p>
+
+            <button class="contact__button" type="submit">
+              Submit <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Manasseh.zw</h1>
+        <p>Full-Stack Developer</p>
+
+        <ul class="footer__list">
+          <li>
+            <a href="/pages/skills.html" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="/pages/services.html" class="footer__link">Services</a>
+          </li>
+          <li>
+            <a href="/pages/projects.html" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a href="https://www.linkedin.com/" class="footer__social-link">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+
+          <a href="https://www.github.com/" class="footer__social-link">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.dribbble.com/" class="footer__social-link">
+            <i class="bx bxl-dribbble"></i>
+          </a>
+        </ul>
+      </div>
+    </footer>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script>
+      /*=============== EMAIL JS ===============*/
+      function sendEmail(contactForm) {
+        const contactName = document.getElementById("contact-name");
+        const contactEmail = document.getElementById("contact-email");
+        const contactProject = document.getElementById("contact-project");
+        const contactMessage = document.getElementById("contact-message");
+
+        if (
+          contactName.value === "" ||
+          contactEmail.value === "" ||
+          contactProject.value === ""
+        ) {
+          contactMessage.classList.remove("color-blue");
+          contactMessage.classList.add("color-red");
+
+          contactMessage.textContent = "Enter all the input fields!";
+          return false;
+        }
+
+        emailjs
+          .sendForm(
+            "service_dfqt8xl",
+            "template_fec3q2t",
+            "#contact-form",
+            "ZDaq2UDKcrqUio0wR"
+          )
+          .then(
+            function (response) {
+              console.log("SUCCESS", response);
+              contactMessage.classList.add("color-blue");
+              contactMessage.textContent = "Message sent successfully ✅";
+
+              setTimeout(() => {
+                contactMessage.textContent = "";
+              }, 5000);
+            },
+            function (error) {
+              console.log("FAILED", error);
+            }
+          );
+        return false; // To block from loading a new page
+      }
+      <form id="contact-form" onsubmit="return sendEmail(this);"></form>;
+    </script>
+    <!--=============== main js ===============-->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
